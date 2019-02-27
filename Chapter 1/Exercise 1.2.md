@@ -8,9 +8,9 @@ In that case, should we?
 Is it true, then, that symmetrically equivalent positions should necessarily have the same value?
 
 ## Answer:
-For tic-tac-toe it is possible to use 4 axis of symmetry to essentially fold the board down to a quarter of the size
+1. For tic-tac-toe it is possible to use 4 axis of symmetry to essentially fold the board down to a quarter of the size
 This would dramatically increase the speed/reduce the memory required.
-If the opponent did not take advantage of symmetries then it could result in a worse overall performance, for example,
+2. If the opponent did not take advantage of symmetries then it could result in a worse overall performance, for example,
 if the opponent always played correct except for 1 corner, then using symmetries would mean you never take advantage
-of that information. This means symmetrically equivalent positions don't always hold the same value in a
-multi-player game
+of that information. 
+3. This would imply different rewards for symmetrically equivalent states. Which in turn implies different values for symmetrically equivalent states. Also, it would only be fair to consider the states as separate.
